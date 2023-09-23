@@ -14,6 +14,9 @@ import {
   polygonMumbai,
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
+import { ThemeProvider } from 'styled-components'
+import { ThorinGlobalStyles, lightTheme } from '@ensdomains/thorin'
+import { ChakraProvider } from '@chakra-ui/react'
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
@@ -44,11 +47,16 @@ const wagmiConfig = createConfig({
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider chains={chains}>
-        <Component {...pageProps} />
-      </RainbowKitProvider>
-    </WagmiConfig>
+    <ChakraProvider>
+      <ThemeProvider theme={lightTheme}>
+        <ThorinGlobalStyles />
+        <WagmiConfig config={wagmiConfig}>
+          <RainbowKitProvider chains={chains}>
+            <Component {...pageProps} />
+          </RainbowKitProvider>
+        </WagmiConfig>
+      </ThemeProvider>
+    </ChakraProvider>
   );
 }
 

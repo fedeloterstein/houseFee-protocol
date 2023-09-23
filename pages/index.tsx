@@ -7,6 +7,8 @@ import abi from '../contract/abi.json';
 import { CreateContract } from '../components/CreateContract'
 import { SegurosList } from '../components/SegurosList';
 import { FirmarContrato } from '../components/FirmarContrato';
+import { Navbar } from '../components/Navbar';
+
 const Home: NextPage = () => {
 
 
@@ -30,14 +32,13 @@ const Home: NextPage = () => {
 
 
   return (
-    <main>
-      <h1>Loans
-        <ConnectButton />
-        <CreateContract />
-        <SegurosList />
-        <FirmarContrato />
-      </h1>
-    </main>
+    <>
+      <Navbar />
+
+      <CreateContract />
+      <SegurosList />
+      <FirmarContrato />
+    </>
   );
 };
 
