@@ -4,18 +4,12 @@ import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import type { AppProps } from 'next/app';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
 import {
-  arbitrum,
-  goerli,
-  mainnet,
-  optimism,
-  polygon,
-  base,
-  zora,
   polygonMumbai,
   celoAlfajores,
   baseGoerli,
   arbitrumGoerli,
   gnosisChiado,
+  neonDevnet
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import { ThemeProvider } from 'styled-components'
@@ -28,7 +22,8 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
     celoAlfajores,
     arbitrumGoerli,
     baseGoerli,
-    gnosisChiado
+    gnosisChiado,
+    neonDevnet
   ],
   [publicProvider()]
 );

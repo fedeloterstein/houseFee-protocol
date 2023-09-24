@@ -11,6 +11,8 @@ const Home: NextPage = () => {
   console.log(chain?.name);
   //@ts-ignore
   const contractAddress = address[chain?.name];
+  console.log(chain?.name, contractAddress);
+  
   return (
     <>
       <Navbar />
