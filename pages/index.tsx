@@ -8,6 +8,7 @@ import { CreateContract } from '../components/CreateContract'
 import { SegurosList } from '../components/SegurosList';
 import { FirmarContrato } from '../components/FirmarContrato';
 import { Navbar } from '../components/Navbar';
+import { Container, Divider } from '@chakra-ui/react';
 
 const Home: NextPage = () => {
 
@@ -34,10 +35,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Navbar />
-
-      <CreateContract />
-      <SegurosList />
-      <FirmarContrato />
+      <Container maxW='container.xl' pt={10} >
+        <CreateContract />
+        <Divider />
+        <SegurosList />
+      </Container>
     </>
   );
 };
