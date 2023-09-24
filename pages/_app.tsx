@@ -13,6 +13,7 @@ import {
   zora,
   polygonMumbai,
   celoAlfajores,
+  baseGoerli,
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import { ThemeProvider } from 'styled-components'
@@ -23,7 +24,8 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
     polygonMumbai,
     celoAlfajores,
-    arbitrum
+    arbitrum,
+    baseGoerli
   ],
   [publicProvider()]
 );

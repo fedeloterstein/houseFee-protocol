@@ -9,6 +9,7 @@ import {address} from '../contract/addresses'
 const Home: NextPage = () => {
   const { chain } = useNetwork();
   console.log(chain?.name);
+  //@ts-ignore
   const contractAddress = address[chain?.name];
   return (
     <>
