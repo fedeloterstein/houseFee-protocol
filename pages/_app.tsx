@@ -9,7 +9,8 @@ import {
   baseGoerli,
   arbitrumGoerli,
   gnosisChiado,
-  neonDevnet
+  neonDevnet,
+  scrollSepolia
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import { ThemeProvider } from 'styled-components'
@@ -23,7 +24,8 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
     arbitrumGoerli,
     baseGoerli,
     gnosisChiado,
-    neonDevnet
+    neonDevnet,
+    scrollSepolia
   ],
   [publicProvider()]
 );

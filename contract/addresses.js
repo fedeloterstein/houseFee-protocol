@@ -4,5 +4,6 @@ export const address = {
     'Base Goerli': '0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76',
     'Arbitrum Goerli': '0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76',
     'Gnosis Chiado': '0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76',
-    'Neon EVM DevNet': '0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76'
+    'Neon EVM DevNet': '0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76',
+    'Scroll Sepolia': '0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76'
 }
