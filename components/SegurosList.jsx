@@ -5,10 +5,10 @@ import { HStack, SimpleGrid, Stack } from '@chakra-ui/react';
 import { Button, Tag, Typography } from '@ensdomains/thorin';
 
 import {FirmarContrato} from './FirmarContrato'
-export const SegurosList = () => {
+export const SegurosList = ({contractAddress}) => {
 
     const { data: getSeguros } = useContractRead({
-        address: '0x338C05A5Cf07D1A705ab61f4181491a9FB08E48a',
+        address: contractAddress,
         abi: abi.abi,
         functionName: 'getSeguros',
     })
@@ -36,7 +36,7 @@ export const SegurosList = () => {
                     <Typography> 💵 Monthly amount {Number(data.montoAlquilerMensual)}</Typography>
                     <Typography>💰 Security Deposit {Number(data.deposito)}</Typography>
                     <HStack>
-                        <FirmarContrato index={index} singAddress={data.inquilino}/>
+                        <FirmarContrato index={index} singAddress={data.inquilino} contractAddress={contractAddress}/>
                         <Button colorStyle="pinkSecondary">Pay fee</Button>
                     </HStack>
                 </Stack>

@@ -12,6 +12,7 @@ import {
   base,
   zora,
   polygonMumbai,
+  celoAlfajores,
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import { ThemeProvider } from 'styled-components'
@@ -21,13 +22,8 @@ import { ChakraProvider } from '@chakra-ui/react'
 const { chains, publicClient, webSocketPublicClient } = configureChains(
   [
     polygonMumbai,
-    mainnet,
-    polygon,
-    optimism,
-    arbitrum,
-    base,
-    zora,
-    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [goerli] : []),
+    celoAlfajores,
+    arbitrum
   ],
   [publicProvider()]
 );

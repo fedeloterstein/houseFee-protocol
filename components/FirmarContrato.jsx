@@ -4,10 +4,10 @@ import abi from '../contract/abi.json';
 import { parseEther } from 'ethers';
 import { Button, Tag } from '@ensdomains/thorin';
 
-export const FirmarContrato = ({ singAddress, index }) => {
+export const FirmarContrato = ({ singAddress, index, contractAddress }) => {
 
     const { data, isLoading, isSuccess, write } = useContractWrite({
-        address: '0x338C05A5Cf07D1A705ab61f4181491a9FB08E48a',
+        address: contractAddress,
         abi: abi.abi,
         functionName: 'firmarContrato',
     })

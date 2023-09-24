@@ -6,9 +6,9 @@ import { Stack } from '@chakra-ui/react';
 import { Button, Input, Typography } from '@ensdomains/thorin';
 
 
-export const CreateContract = () => {
+export const CreateContract = ({contractAddress}) => {
     const { data, isLoading, isSuccess, write } = useContractWrite({
-        address: '0x338C05A5Cf07D1A705ab61f4181491a9FB08E48a',
+        address: contractAddress,
         abi: abi.abi,
         functionName: 'crearSeguro',
         args: [parseEther('0.0000001')]
