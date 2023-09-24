@@ -15,4 +15,4 @@ TODO
 - Celo Alfajores address: 0x4ba59fFA7985dBe24cECf45B67485Dba3Aadfb1C ([alfajores.celoscan](https://alfajores.celoscan.io//address/0x4ba59fFA7985dBe24cECf45B67485Dba3Aadfb1C))
 - Base Goerli address: 0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76 ([base-goerli.blockscout](https://base-goerli.blockscout.com/address/0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76))
 - Arbiscan address: 0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76 ([testnet.arbiscan](https://testnet.arbiscan.io/address/0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76))
-
+- Gnosis address: 0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76 ([testnet.arbiscan](https://gnosis-chiado.blockscout.com/address/0x03eF452925ecD0335BBA19E2fCf9f3E5459d0b76))

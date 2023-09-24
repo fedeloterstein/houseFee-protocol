@@ -15,6 +15,7 @@ import {
   celoAlfajores,
   baseGoerli,
   arbitrumGoerli,
+  gnosisChiado,
 } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import { ThemeProvider } from 'styled-components'
@@ -26,7 +27,8 @@ const { chains, publicClient, webSocketPublicClient } = configureChains(
     polygonMumbai,
     celoAlfajores,
     arbitrumGoerli,
-    baseGoerli
+    baseGoerli,
+    gnosisChiado
   ],
   [publicProvider()]
 );
